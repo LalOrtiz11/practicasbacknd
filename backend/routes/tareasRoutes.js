@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const { getTareas, createTareas, deleteTareas, updateTareas} = require ('../controllers/tareasController')
+const { getTareas, createTareas, deleteTareas, updateTareas} = require ('../controllers/tareasControllers')
 
 router.get('/', getTareas)
 
