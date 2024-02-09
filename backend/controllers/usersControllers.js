@@ -68,7 +68,7 @@ const datosUser = asyncHandler(async(req, res) => {
 //funcion para generar el token
 const generarToken =(id_usuario) => {
     return jwt.sign({id_usuario},process.env.JWT_SECRET,{
-        expiresIn: '60s'
+        expiresIn: '60m'
     })
 }
 
